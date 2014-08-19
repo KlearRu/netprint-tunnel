@@ -1,0 +1,367 @@
+.b-content {
+    margin-top: 0;
+}
+.color-header-background {
+    height: 170px;
+    text-align: center;
+}
+.color-header-background img {
+    margin-top: 45px;
+}
+@media only screen and (max-width: 960px) {
+    .b-content {
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .color-header-background {
+        height: 45px;
+    }
+    .color-header-background img {
+        max-height: 80%;
+        margin-top: 3px;
+    }
+}
+.b-type-selector__current__ear {
+    background: url(/assets/i/themes/orange/type-selector-current.png) 0 0 no-repeat
+}
+
+
+/*Фон страницы*/
+.color-global-background {
+    background: url(/assets/i/themes/blue/bg.png);
+}
+
+/* Ссылка */
+.color-link {
+    color: #f26520
+}
+
+/*Контент*/
+.color-content {
+    background: #fff;
+}
+
+/*Фон шапки*/
+.color-header-background {
+    background-color: #4d5a6d;
+    background: url(/assets/i/themes/orange/header.jpg);
+    background-size: cover;
+}
+
+/*Фон меню в шапке*/
+.color-navigation-background {
+    background-color: rgba(244, 144, 32, 0.7);
+    position: relative;
+    top: -55px;
+}
+/*Ссылка в меню в шапке*/
+.color-navigation-link {
+    color: #fff;
+}
+.color-navigation-link:hover {
+    color: #f26520
+}
+
+/*Ссылка-иконка для мобильного разрешения*/
+.color-navigation-mobile-link {
+    color: #fff;
+}
+
+/*Кнопки*/
+.color-button {
+    background-color: #f36523;
+    color: #fff;
+}
+.color-button a {
+    color: #fff
+}
+/*Кнопка при наведении*/
+.color-button:hover {
+    background-color: #fef200;
+    opacity: 1;
+}
+.color-button:hover a {
+    color: #f36523
+}
+
+/*Заголовок*/
+.color-heading {
+    color: #363f4c
+}
+
+/*Шрифт в текстовых блоках*/
+.color-article {
+    color: #363f4c;
+}
+.color-article h3 {
+    color: #4d5a6d
+}
+.color-article p {
+    color: #363f4c
+}
+.color-article a {
+    color: #f26520
+}
+.color-article li:before {
+    color: #f26520
+}
+
+
+/*Ссылки в текстовых блоках*/
+.color-article .b-article a, .color-article.b-article a {
+    color: #f26520
+}
+
+/*Шрифт "как это работает"*/
+.color-howitworks {
+    color: #4d5a6d
+}
+/*Иконка "как это работает"*/
+.color-icon-howitworks {
+    color: #b2b9c3;
+    background-color: #f5f9fc
+}
+.color-howitworks a {
+    color: #f26520
+}
+
+.color-icon-howitworks-offline {
+    background-color: #fff;
+    color: #b8bdc5
+}
+
+.color-link-about-editor {
+    color: #f26520
+}
+
+.color-desktop-only {
+    background: #fff;
+}
+
+.color-type-selector {
+    color: #586374
+}
+.color-type-selector-title {
+    color: #f26520
+}
+
+
+/*Навигация по печатному каталогу*/
+.b-print__catalogue-selector .current a {
+    color: #ced3d8
+}
+.color-catalogue-selector {
+    color: #f26520
+}
+
+/*Элемент печатного каталога*/
+.color-print-item {
+    background-color: #fff;
+}
+.color-print-item:hover .b-button {
+    background-color: #fef200;
+}
+.color-print-item-title {
+    color: #f36523;
+}
+
+.responsive-mobile .b-print__catalogue-selector__element {
+    background-color: #fff;
+    border-color: #f1f1f1
+}
+/*Подвал элемента печатного каталога*/
+.color-print-item-footer {
+    background-color: #f9fbfd;
+}
+/*Прайс элемента печатного каталога*/
+.color-print-item-price {
+    color: #8092a6
+}
+/*Прайс элемента печатного каталога значение*/
+.color-print-item-price-value {
+    color: #626c78
+}
+
+/*Кнопка назад в мобильном каталоге*/
+.color-mobile-nav-back {
+    color: #8092a6
+}
+
+/*Иконки в меню*/
+.color-icon-nav {
+    color: #fff
+}
+
+/*Переключатель*/
+.color-switch {
+    background-color: #fff;
+    border-bottom-color: #d8dadd;
+}
+.color-switch-element {
+    border-color: #f26520
+}
+.color-switch-element a {
+    color: #f26520
+}
+.color-switch-element.current {
+    background-color: #f26520
+}
+.color-switch-element.current a {
+    color: #fff
+}
+
+.responsive-tablet .color-switch {
+    background-color: transparent;
+    border-color: transparent;
+}
+.responsive-tablet .color-switch-element.current {
+    background: transparent;
+}
+.responsive-tablet .color-switch-element a {
+    color: #f26520
+}
+.responsive-tablet .color-switch-element.current a {
+    color: #363f4c
+}
+
+/*Проверка статуса*/
+.color-input {
+    border-color: #e4e6e9
+}
+.color-order-note {
+    color: #e4e6e9
+}
+
+/*Разделитель колонок*/
+.color-column-bordered {
+    border-color: #dee0e2
+}
+
+/*Шаги заказа*/
+.color-order-steps-note {
+    color: #adb0b4
+}
+.color-order-steps a {
+    color: #f26520
+}
+.color-order-steps-done a {
+    color: #7ad8a0
+}
+.color-order-steps-current a {
+    color: #363f4c
+}
+
+/*Каталог заказа*/
+.color-item-title {
+    color: #f26520
+}
+.color-item-price {
+    color: #363f4c
+}
+.color-item-new-price {
+    color: #e54c4c
+}
+.color-accordion-icon-closed {
+    color: #f26520
+}
+
+/* Отзывы */
+.color-replies-refresh {
+    color: #f26520
+}
+.color-reply {
+    color: #586374
+}
+
+.color-selector-item {
+    color: #f26520;
+}
+.color-selector-item.current {
+    background: #f26520;
+    color: #fff
+}
+.color-print-item-title-order {
+    color: #f26520
+}
+
+/*Попапы*/
+.color-popup {
+    background-color: #f0f3f6;
+}
+.color-auth-credentials {
+    border-bottom-color: #c6cad0;
+}
+.color-auth-bubble {
+    color: #fff;
+    background: #c6cad0;
+}
+.responsive-mobile .color-auth-bubble,
+.responsive-tablet .color-auth-bubble {
+    background: #f0f3f6;
+    color: #bbbfc5
+}
+
+/*Подвал*/
+.color-footer {
+    color: #586374
+}
+/*Ссылки в подвале*/
+.color-footer-link {
+    color: #f26520
+}
+
+/*Фон бокового меню*/
+.color-aside {
+    background-color: #282828;
+}
+/*Ссылка бокового меню*/
+.color-aside-link {
+    color: #fff;
+}
+/*Подвал бокового меню*/
+.color-aside-footer {
+    color: #767676
+}
+
+/* FAQ */
+.color-faq {
+    background-color: #fff;
+}
+.color-faq-topic {
+    color: #f26520;
+}
+
+/* Сравнительная таблица */
+.color-compare-table {
+
+}
+.color-compare-table thead td {
+    background-color: #363f4c;
+    color: #f0f3f6;
+    border-right: 1px solid #2b2c2c
+}
+.color-compare-table thead td:first-child {
+    background-color: #dee1e5;
+    border-right: none
+}
+.color-v-header {
+    color: #fff;
+    background-color: #4d5a6d;
+    border-color: #484948;
+}
+.color-cell {
+    color: #d0d3d7;
+    border: 1px solid #f0f3f6;
+    border-top: none;
+    background-color: #ffffff;
+}
+.color-cell-no-bottom {
+    border-bottom: none
+}
+.color-cell-no-right {
+    border-right: none
+}
+.color-table-y {
+    color: #00adef;
+}

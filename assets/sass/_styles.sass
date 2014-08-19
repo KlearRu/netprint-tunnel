@@ -1,0 +1,1251 @@
+textarea:focus, input:focus
+	outline: 0
+
+//*
+//	outline: 1px solid red
+
+body, html
+	width: 100%
+	height: 100%
+
+	font-family: "OpenSans"
+	font-weight: 400
+	&.no-overflow
+		overflow: hidden
+
+.b-icon
+	font-family: "entypo"
+	font-weight: 400
+	-webkit-font-smoothing: antialiased
+
+// Common
+.b-button
+	height: 40px
+	line-height: 40px
+	font-size: 14px
+	position: relative
+	+transition(background-color 0.2s ease-out)
+	+border-radius($site-radius)
+	a
+		//position: absolute
+		height: 40px
+		width: 100%
+		display: block
+		text-decoration: none
+.b-button--huge
+	height: 70px
+	line-height: 70px
+	width: 300px
+	text-align: center
+	margin: 0 auto
+	display: block
+	font-size: 22px
+	margin-bottom: 40px
+	a
+		height: 70px
+
+.b-input
+	font-size: 14px
+	+border-radius($site-radius)
+	border: 1px solid
+	height: 45px
+	vertical-align: middle
+	padding: 0 18px
+
+// Layout
+.l-page
+	left: 0px
+	width: 100%
+	height: 100%
+	position: relative
+	z-index: 100
+
+	+transition(left $aside-speed ease-out)
+
+	-webkit-transform-style: preserve-3d
+	-webkit-backface-visibility: hidden
+
+.l-aside
+	position: fixed
+	top: 0
+	left: 0px
+	width: 100%
+	height: 100%
+	min-height: 100%
+	z-index: 10
+
+.l-footer
+	+transition(left $aside-speed ease-out)
+	background: transparent
+	position: relative
+	z-index: 100
+
+.l-content
+	width: 950px
+	margin: 0 auto
+	+layout-animation
+
+// Columns
+.b-columns
+	width: 100%
+	+clearfix
+.b-column
+	float: left
+
+.b-column--50
+	width: 50%
+.b-column--50--padded-right
+	width: 45%
+	padding-right: 5%
+.b-column--50--padded-left
+	width: 45%
+	padding-left: 5%
+
+.b-column--10
+	width: 10%
+.b-column--90
+	width: 90%
+
+.b-column--20
+	width: 20%
+.b-column--80
+	width: 80%
+
+.b-column--70
+	width: 70%
+.b-column--70--padded
+	width: 65%
+	margin-right: 5%
+.b-column--30
+	width: 30%
+
+.b-column--bordered
+	border-right: 1px solid
+	margin-left: -1px
+
+// Blocks
+.b-page__shift-overlay
+	position: absolute
+	top: 0
+	width: 100%
+
+	height: 0
+	overflow: hidden
+
+	background: #000
+	opacity: 0
+	+transition(opacity $aside-speed ease-out)
+
+	z-index: 500
+
+	-webkit-transform-style: preserve-3d
+	-webkit-backface-visibility: hidden
+
+.shifted--js
+	overflow: hidden
+	.b-page__shift-overlay
+		opacity: 0.5
+		display: block
+		height: 100%
+
+.b-header
+	height: 110px
+	+layout-animation
+.b-header__content__logo
+	font-size: 30px
+	color: #fff
+	height: 110px
+	line-height: 110px
+	font-weight: 300
+	+layout-animation
+	a
+		color: #fff
+		text-decoration: none
+.b-header__mobile__icons
+	display: none
+.b-header__mobile__icon
+	padding-top: 14px
+	padding-bottom: 15px
+.b-header__mobile__icons__sandwich
+	position: absolute
+	top: 0px
+	left: 14px
+	padding-right: 30px
+.b-header__mobile__icons__login
+	position: absolute
+	top: 0px
+	right: 14px
+	padding-left: 30px
+
+.b-nav
+	height: 55px
+.b-nav__content__element
+	height: 55px
+	line-height: 55px
+	margin-right: 17px
+	float: left
+	.b-icon
+		vertical-align: -2px
+		font-size: 16px
+		margin-right: 6px
+	.b-icon--huge
+		margin-right: 8px
+		font-size: 20px
+.b-nav__content__element--nav--current
+	opacity: 0.5
+.b-nav__content__element--button
+	margin-right: 0
+.b-button--nav
+	height: 40px
+	line-height: 40px
+	margin-top: 8px
+	padding: 0 20px
+	margin-right: 0
+.b-nav__content__element--auth
+	float: right
+.b-nav__content__element--sandwich
+	display: none
+.b-nav__content__element__link
+	font-size: 14px
+	text-decoration: none
+	+transition(color 0.2s ease-out)
+.b-nav__content__element__link--button
+	display: block
+	margin-top: 7px
+	height: 40px
+	line-height: 40px
+	margin-right: 0
+	padding: 0 18px
+	+border-radius($site-radius)
+	+transition(background-color 0.2s ease-out)
+
+.b-content
+	margin-top: 40px
+	padding-bottom: 40px
+	+layout-animation
+.b-content--nopad
+	padding-bottom: 0
+
+.b-content__heading
+	margin-bottom: 20px
+	text-align: center
+	color: #353f4b
+	font-size: 30px
+	font-weight: 200
+.b-content__heading--left
+	text-align: left
+
+.b-content__subheading
+	margin-bottom: 20px
+	text-align: center
+	color: #353f4b
+	font-size: 18px
+	font-weight: 200
+.b-content__subheading--left
+	text-align: left
+
+// Index
+.b-print__catalogue-selector
+	text-align: center
+	padding-top: 12px
+.b-print__catalogue-selector__element
+	margin-left: 40px
+	margin-right: 40px
+	display: inline-block
+	height: 70px
+	padding-bottom: 24px
+	*display: inline
+	zoom: 1
+	+transition(all 0.2s ease-out, opacity 0.2s ease-out)
+	&:hover
+		opacity: 0.7
+.b-print__catalogue-selector__element__link
+	font-size: 18px
+	text-decoration: none
+	+transition(color 0.2s ease-out, opacity 0.2s ease-out)
+	i
+		font-style: normal
+		border-bottom: 1px dotted
+.current .b-print__catalogue-selector__element__link i
+	border-bottom: none
+.b-icon--catalogue-selector__element
+	font-size: 34px
+	display: block
+	margin-bottom: 14px
+	-webkit-font-smoothing: antialiased
+
+.b-print-items
+	+clearfix
+	width: auto
+	margin: 0 auto
+	margin-bottom: 40px
+	text-align: center
+.b-print-items__element
+	vertical-align: top
+	display: inline-block
+	width: 306px
+	height: 412px
+	margin: 5px
+	margin-left: 0px
+	+border-radius(10px)
+	+box-shadow(0 1px 3px #e0e7ee)
+	+transition(box-shadow 0.2s ease-out)
+	position: relative
+	*display: inline
+	zoom: 1
+	&:hover
+		+box-shadow(0 1px 3px #e0e7ee, 0 0 3px rgba(122,216,160,.75))
+.b-print-items__element--order
+	height: auto
+	padding-bottom: 20px
+	.b-print-items__element__image
+		position: relative
+		cursor: pointer
+		width: auto
+		display: inline-block
+		*display: inline
+		zoom: 1
+		+transition(opacity 0.3s ease-in-out)
+		.b-print-items__element__loupe
+			width: 32px
+			height: 32px
+			position: absolute
+			bottom: 5px
+			right: 5px
+			z-index: 10
+			background: url(/assets/i/icon-loupe.png) no-repeat
+	&:hover
+		.b-print-items__element__image
+			opacity: 0.8
+.b-print-items__element__title__order
+	margin-top: 16px
+	margin-bottom: 16px
+	font-size: 14px
+	font-weight: 100
+.b-print-items__element__icons
+	height: 35px
+	padding-top: 10px
+.b-print-items__element__image
+	height: 226px
+	line-height: 226px
+	text-align: center
+	img
+		max-height: 226px
+		max-width: 100%
+		vertical-align: middle
+.b-print-items__element__title
+	font-size: 18px
+	text-align: center
+	width: 180px
+	margin: 0 auto
+	line-height: 140%
+.b-print-items__element__footer__params
+	height: 65px
+	vertical-align: middle
+	+clearfix
+.b-print-items__element__footer__param
+	font-size: 12px
+	height: 35px
+	margin-top: 14px
+	float: left
+	width: 49%
+	border-right: 1px solid #dfe3e8
+	line-height: 160%
+.b-print-items__element__footer__param--quantity
+	border-right: none
+.b-print-items__element__footer__param__price
+	font-size: 14px
+	display: block
+	font-weight: 700
+
+.b-print-items__element__footer
+	position: absolute
+	bottom: 0
+	left: 0
+	height: 120px
+	width: 100%
+	+border-radius(0 0 10px 10px)
+.b-button--print-items__footer
+	width: 80%
+	margin: 0 auto
+
+.b-well
+	+border-radius(10px)
+	background: #fff
+	padding-top: 50px
+	padding-bottom: 50px
+	+box-shadow(0 1px 3px #e0e7ee)
+	+clearfix
+
+.b-howitworks
+	width: 100%
+	text-align: center
+.b-howitworks--offline
+	margin-bottom: 30px
+	background: url(/assets/i/offline-bg.png) 50% 30px no-repeat
+.b-howitworks__element
+	width: 200px
+	display: inline-block
+	*display: inline
+	zoom: 1
+	margin: 0 10px
+	vertical-align: top
+	margin-top: 40px
+.b-icon--howitworks
+	line-height: 110px
+	vertical-align: middle
+	text-align: center
+	width: 110px
+	height: 110px
+	+border-radius(110px)
+	font-size: 50px
+	margin: 0 auto
+	-webkit-font-smoothing: antialiased
+	margin-bottom: 35px
+.b-howitworks__element__title
+	font-size: 20px
+	text-align: center
+	margin-bottom: 25px
+	line-height: 160%
+	font-weight: 200
+.b-howitworks__element__description
+	font-size: 12px
+	i
+		font-size: 11px
+
+.b-button-donwload
+	width: 225px
+	height: 70px
+	line-height: 70px
+	vertical-align: middle
+	@include border-radius(6px)
+	background: #fff
+	margin: 0 auto
+	margin-bottom: 12px
+	background-repeat: no-repeat
+	background-position: 30px 50%
+	padding-left: 80px
+	font-size: 18px
+	+transition(opacity 0.3s ease-in-out)
+	position: relative
+	&:hover
+		opacity: 0.7
+	a
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 225px
+		padding-left: 80px
+		height: 100%
+
+		text-decoration: none
+.b-button-donwload--mac
+	background-color: #00aeef
+	background-image: url(/assets/i/icon-mac.png)
+	color: #fff
+	a
+		color: #fff
+.b-button-donwload--win
+	background-color: #fff
+	background-image: url(/assets/i/icon-win.png)
+	a
+		color: #00aeef
+
+.b-offline-desktop-only
+	padding-top: 35px
+	padding-bottom: 10px
+	margin-bottom: 40px
+
+.b-about-editor
+	margin-bottom: 40px
+	text-align: center
+	font-size: 14px
+	margin-top: 20px
+
+.b-help
+	+clearfix
+.b-content__heading--left
+	text-align: left
+
+.b-order-status
+	width: 100%
+	margin-bottom: 40px
+.b-content__heading--order
+	margin-top: -20px
+.b-button--order
+	width: 230px
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	margin-bottom: -18px
+.b-order-status__note
+	width: 66%
+	margin: 0 auto
+	margin-bottom: 20px
+	margin-top: 10px
+	padding: 0 18px
+	position: relative
+	left: -18px
+	font-size: 12px
+	font-style: italic
+	white-space: nowrap
+.b-input--order
+	display: block
+	margin: 0 auto
+	margin-bottom: 12px
+	width: 66%
+	font-size: 14px
+
+.b-banner
+	width: 100%
+
+// reg
+.b-auth a:hover
+	text-decoration: none
+.b-well--auth
+	padding-left: 80px
+	padding-right: 80px
+.b-button--auth
+	width: 180px
+	text-align: center
+	float: right
+.b-button--register
+	margin: 0 auto
+	float: none
+	width: 220px
+	font-size: 16px
+.b-input--auth
+	width: 93%
+	border: none
+.b-auth__credentials
+	margin-bottom: 40px
+	padding-bottom: 30px
+	border-bottom: 1px solid
+.b-auth__credentials--amnesia
+	padding-bottom: 0
+	margin-bottom: 0
+	border-bottom: 0
+.b-auth__params
+	width: 290px
+	font-size: 12px
+	height: 43px
+	line-height: 43px
+	vertical-align: middle
+	float: left
+.b-auth__params__remember__checkbox
+	margin-left: 30px
+	margin-right: 20px
+.b-auth__social-buttons__button
+	cursor: pointer
+	width: 43.5%
+	display: inline-block
+	*display: inline
+	zoom: 1
+	font-size: 14px
+	+border-radius($site-radius)
+	margin-right: 10px
+	margin-bottom: 10px
+	height: 44px
+	line-height: 44px
+	vertical-align: middle
+	padding-left: 25px
+	+link-animation
+	-webkit-backface-visibility: hidden
+	backface-visibility: hidden
+	+clearfix
+	color: #fff
+	&:nth-child(2n)
+		margin-right: 0
+	&.b-auth__social-buttons__button--vk
+		background-color: #5c81a9
+	&.b-auth__social-buttons__button--ok
+		background-color: #ef7800
+	&.b-auth__social-buttons__button--fb
+		background-color: #3765a3
+	&.b-auth__social-buttons__button--mail
+		background-color: #004b88
+
+.b-auth__social-buttons__button__icon
+	width: 40px
+	margin-right: 16px
+	height: 44px
+	vertical-align: middle
+	float: left
+	text-align: center
+	img
+		vertical-align: middle
+
+.b-row
+	margin-bottom: 14px
+.b-auth__note
+	font-size: 12px
+	margin-bottom: 20px
+	text-align: center
+.b-column--50--padded-left--auth
+	width: 42%
+	padding-left: 8%
+.b-auth__bubble
+	position: absolute
+	left: 50%
+	margin-left: -20px
+	margin-top: 15px
+	width: 32px
+	height: 32px
+	vertical-align: middle
+	line-height: 32px
+	font-size: 10px
+	text-align: center
+	+border-radius(40px)
+
+// order
+.b-order-steps
+	background: #fff
+	height: 70px
+	text-align: center
+	white-space: nowrap
+.b-order-steps__step
+	display: inline-block
+	*display: inline
+	zoom: 1
+	font-size: 18px
+	font-weight: 100
+	vertical-align: top
+	margin-top: 23px
+	position: relative
+	a
+		border-bottom: 1px dashed
+		text-decoration: none
+.b-order-steps__icon
+	display: inline-block
+	*display: inline
+	zoom: 1
+	width: 66px
+	height: 30px
+	margin: 0 6px
+	margin-top: 17px
+	background: url(/assets/i/order-steps-icon.png) no-repeat
+	vertical-align: top
+.b-order-steps__icon__done
+	background: #7ad8a0
+	color: #fff
+	width: 27px
+	height: 27px
+	line-height: 27px
+	vertical-align: middle
+	font-size: 14px
+	display: inline-block
+	+border-radius(30px)
+	border: 3px solid #fff
+	display: none
+.b-order-steps__icon--done .b-order-steps__icon__done
+	display: inline-block
+.b-order-steps__step--current
+	a
+		border-bottom: none
+.b-order-steps__step__note
+	font-size: 12px
+	display: block
+	margin-top: 5px
+	position: absolute
+	text-align: center
+	width: 100%
+	strong
+		font-weight: 600
+
+.b-type-selector
+	+clearfix
+	@include border-radius(5px)
+	background-color: #fff
+	@include box-shadow(0 1px 3px #e0e7ee)
+.b-type-selector__content
+	padding-left: 80px
+	padding-top: 35px
+	padding-right: 42px
+	font-size: 14px
+	font-weight: 100
+	line-height: 140%
+.b-type-selector__content__title
+	font-size: 18px
+	margin-bottom: 16px
+	font-weight: normal
+	span
+		border-bottom: 1px dashed
+.b-type-selector__content__icon
+	position: absolute
+	font-size: 34px
+	left: 35px
+	margin-top: 0px
+.b-type-selector__item
+	width: 315px
+	float: left
+	height: 140px
+	border-right: 1px solid #f0f3f6
+	cursor: pointer
+	position: relative
+	+transition(all 0.3s ease-in-out)
+	&:first-child
+		@include border-radius(5px 0 0 5px)
+	&:last-child
+		border-right: none
+		@include border-radius(0 5px 5px 0)
+.current
+	.b-type-selector__current__ear
+		opacity: 1
+.b-type-selector__current__ear
+	background: url(/assets/i/type-selector-current.png) 0 0 no-repeat
+	position: absolute
+	bottom: -8px
+	left: 50%
+	width: 18px
+	+transition(all 0.3s ease-in-out)
+	height: 8px
+	opacity: 0
+	margin-left: -9px
+
+.b-type-selector-mobile__item
+	height: 141px
+.b-type-selector-mobile__item__wrap
+	width: 200px
+	padding-top: 45px
+	margin: 0 auto
+	position: relative
+	height: 141px
+	text-align: center
+	font-size: 12px
+	font-weight: 100
+	@include border-radius(6px)
+	background-color: #fff
+	line-height: 140%
+	@include box-shadow(0 1px 2px #e0e7ee)
+	margin: 0 auto
+.b-type-selector-mobile__item__nav__wrap
+	position: absolute
+	height: 200px
+	width: 100%
+.b-type-selector-mobile__item__nav
+	position: absolute
+	width: 50px
+	height: 50px
+	background: rgba(0, 0, 0, 0.2)
+	border-radius: 50px
+	top: 50%
+	margin-top: -35px
+	line-height: 50px
+	visibility: middle
+	text-align: center
+	font-family: Entypo
+	color: #fff
+	cursor: pointer
+	font-weight: 600
+	+transition(all 0.2s ease-out)
+	margin-top: -250px
+	&:hover
+		background: rgba(0, 0, 0, 0.5)
+.b-type-selector-mobile__item__nav--prev
+	left: 2%
+.b-type-selector-mobile__item__nav--next
+	right: 2%
+
+.b-type-selector__content__title--mobile
+	span
+		border-bottom: none
+.b-type-selector__content__icon--mobile
+	position: relative
+	margin: 0
+	left: 0
+	margin-bottom: 12px
+
+.b-type-content
+	margin-top: 34px
+
+.b-item__description
+	padding-left: 50px
+.b-item__description
+	.b-content__subheading
+		margin-bottom: 30px
+.b-item__profile
+	margin-bottom: 30px
+.b-item__gallery
+	margin-bottom: 50px
+
+.b-item__what_more
+	padding-left: 30px
+	padding-bottom: 50px
+.b-item__what_more__text
+
+	padding-left: 65px
+	padding-top: 10px
+	width: 230px
+	font-size: 14px
+	color: #586374
+	line-height: 150%
+.b-item__what_more__text__title
+	font-size: 18px
+	margin-bottom: 25px
+	color: #000
+	position: relative
+.b-item__what_more__text__title .b-icon
+	position: absolute
+	font-size: 34px
+	left: -50px
+
+.b-well--item
+	margin-top: 40px
+	margin-bottom: 40px
+	padding-bottom: 0
+
+.b-slider
+	height: 226px
+	padding-top: 40px
+	margin-bottom: 50px
+	position: relative
+.b-slider--item
+	margin-top: -30px
+.b-slider .slick-list
+	padding-top: 5px
+	padding-bottom: 5px
+.b-slider__items
+	width: 100%
+	max-width: 960px
+	margin: 0 auto
+	height: 226px
+.b-slider__item__wrap
+	position: relative
+	width: 96%
+	max-width: 230px
+	margin: 0 auto
+	height: 175px
+	padding-top: 45px
+	background: #fff
+	@include border-radius(7px)
+	@include box-shadow(0 1px 3px #e0e7ee)
+	+transition(all 0.3s ease-out)
+	&:hover
+		@include box-shadow(0 1px 3px #e0e7ee, 0 0 3px rgba(122,216,160,.75))
+.b-slider__item
+	//width: 250px
+	height: 220px
+	text-align: center
+	cursor: pointer
+	margin: 0 auto
+	img
+		display: inline-block
+.b-slider__nav__item
+	position: absolute
+	width: 50px
+	height: 50px
+	background: rgba(0, 0, 0, 0.2)
+	border-radius: 50px
+	top: 50%
+	margin-top: -10px
+	line-height: 50px
+	visibility: middle
+	text-align: center
+	font-family: Entypo
+	color: #fff
+	cursor: pointer
+	font-weight: 600
+	+transition(all 0.2s ease-out)
+	&:hover
+		background: rgba(0, 0, 0, 0.5)
+.b-slider__nav__item--prev
+	left: -20px
+.b-slider__nav__item--next
+	right: -20px
+
+.b-format__image
+	height: 60px
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	margin-bottom: 4px
+.b-format__title
+	display: inline-block
+	font-size: 14px
+	color: #7f8c8d
+	margin-bottom: 8px
+	+transition(all 0.2s ease-out)
+.b-format__price
+	font-size: 22px
+	font-weight: 600
+	color: #9d228b
+.b-format__price__discount
+	font-size: 14px
+	text-decoration: line-through
+.b-button--item-order
+	width: 90%
+	position: absolute
+	bottom: 8px
+	left: 5%
+
+.b-replies
+	margin-top: 30px
+	margin-bottom: 50px
+	+clearfix
+.b-replies__item
+	padding-bottom: 20px
+	+clearfix
+.b-replies__avatar
+	float: left
+	margin-right: 10px
+	img
+		width: 70px
+		height: 70px
+		+border-radius(100px)
+
+.b-replies__title
+	font-size: 18px
+	margin-bottom: 12px
+.b-replies__reply
+	font-size: 14px
+	line-height: 140%
+	font-weight: 100
+
+.b-replies__refresh
+	text-align: center
+	font-size: 14px
+	cursor: pointer
+	+transition(opacity 0.3s ease-out)
+	&:hover
+		opacity: 0.6
+	.b-icon
+		vertical-align: -2px
+		font-size: 20px
+
+.b-socials-share
+	text-align: center
+	margin-bottom: 20px
+.b-socials-share__item
+	width: 44px
+	height: 44px
+	display: inline-block
+	*display: inline
+	zoom: 1
+	text-align: center
+	+border-radius(50px)
+	line-height: 44px
+	vertical-align: middle
+	margin: 0 5px
+	+transition(opacity 0.3s ease-in-out)
+	&:hover
+		opacity: 0.7
+	img
+		vertical-align: middle
+		max-width: 25px
+		max-height: 25px
+.b-socials-share__item--fb
+	background: #3765a3
+.b-socials-share__item--vk
+	background: #5c81a9
+.b-socials-share__item--ok
+	background: #ef7800
+.b-socials-share__item--tw
+	background: #00aeef
+
+.b-compare-table
+//	margin-top: -50px
+
+	margin-bottom: 30px
+.b-compare-table__hider
+	text-align: center
+	font-size: 12px
+	margin-bottom: 16px
+.b-compare-table__entry--wrap
+	//padding-bottom: 20px
+.b-compare-table__entry
+	+border-radius(5px)
+	line-height: 140%
+	overflow: hidden
+	thead
+		td
+			font-size: 12px
+			text-align: center
+			padding: 10px
+	tbody
+		td
+			font-size: 22px
+			padding: 30px
+			text-align: center
+
+		.b-compare-table__v-header
+			font-size: 14px
+			width: 230px
+			text-align: left
+			border-style: solid
+			border-bottom-width: 1px
+			&.b-compare-table__v-header--no-border
+				border-bottom: none
+.b-compare-table__entry--wrap--mobile
+	width: 100%
+	margin-bottom: 20px
+	table
+		width: 100%
+		thead
+			td
+				font-size: 10px
+		tbody
+			td
+				padding: 10px
+			.b-compare-table__v-header
+				font-size: 11px
+
+.b-faq
+	margin-top: -50px
+	+border-radius(5px)
+	+clearfix
+.b-faq__topics__wrap
+	width: 320px
+	height: 100%
+	float: left
+	margin-left: -100%
+.b-faq__topics
+	padding: 40px
+.b-faq__topic
+	margin-bottom: 15px
+	cursor: pointer
+.b-faq__entries__wrap
+	width: 100%
+	float: left
+.b-faq__entries
+	min-height: 650px
+	border-left: 1px solid #f0f3f6
+	margin-left: 320px
+	padding: 40px
+
+// popups
+.b-popup-bg
+	display: none
+	z-index: 999
+	width: 100%
+	height: 100%
+	position: fixed
+	left: 0
+	top: 0
+	background: rgba(54, 63, 76, .9)
+
+.b-popup
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+
+	width: 100%
+	height: 100%
+
+	overflow: hidden
+	overflow-y: scroll
+
+	z-index: 1000
+	a
+		+link-animation
+
+.b-popup__content
+	position: relative
+
+	top: 100px
+	left: 50%
+
+	margin-left: -289px
+	width: 486px
+
+	+border-radius(10px)
+
+	padding: 0 46px
+	padding-top: 50px
+	padding-bottom: 50px
+	margin-bottom: 100px
+
+	img
+		max-width: 100%
+
+.b-popup__close
+	width: 23px
+	height: 23px
+	background: url(/assets/i/popup-close.png) no-repeat
+	position: absolute
+	right: -40px
+	top: 0px
+	cursor: pointer
+
+// aside
+.b-aside
+	+clearfix
+.b-aside__nav
+	margin-top: 110px
+	border-top: 1px solid #3e3e3e
+.b-aside__nav__element
+	border-bottom: 1px solid #3e3e3e
+	height: 42px
+	line-height: 42px
+	vertical-align: middle
+	font-size: 18px
+	position: relative
+.b-aside__nav__element__link
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	padding-left: 30px
+	text-decoration: none
+	+link-animation
+
+.b-aside__footer
+	position: absolute
+	bottom: 28px
+	left: 30px
+	width: 270px
+	font-size: 10px
+.b-aside__footer__block
+	margin-top: 12px
+	line-height: 140%
+
+// footer blocks
++sticky-footer(50px, ".l-page", ".footer-buffer", ".l-footer")
+
+.b-footer
+	position: relative
+	z-index: 100
+.b-footer__block
+	font-size: 11px
+	line-height: 20px
+	max-width: 50%
+.b-footer__block__link
+	+link-animation
+
+
+.b-footer__address
+	float: left
+.b-footer__copyrights
+	float: right
+	text-align: right
+
+
+
+// Accordion
+.b-accordion, .b-article ul.b-accordion
+	width: 100%
+	padding-bottom: 30px
+	margin-bottom: 0
+.b-accordion__element
+	font-size: 16px
+	&.opened
+		padding-bottom: 10px
+	&:before
+		padding-right: 8px
+		content: '—'
+		display: inline-block
+		*display: inline
+		zoom: 1
+	a
+		border-bottom: 1px dashed
+		text-decoration: none
+.b-accordion__element__description
+	margin: auto
+
+	margin-top: 16px
+	font-size: 14px
+	margin-left: 46px
+	//padding-bottom: 36px
+	&:last-child
+		margin-bottom: 0
+.b-accordion__element--item
+	margin-bottom: 30px
+	&:before
+		display: none
+	.b-accordion__element__description
+		margin-left: 0
+
+.b-icon--opened
+	display: none
+	margin-right: 5px
+	vertical-align: -2px
+.b-icon--closed
+	margin-right: 5px
+	display: inline-block
+	vertical-align: -2px
+
+.b-accordion__element.opened
+	margin-bottom: 0
+
+	.b-icon--opened
+		display: inline-block
+	.b-icon--closed
+		display: none
+
+		//margin-bottom: 36px
+	a
+		border-bottom: none
+
+
+
+// Checkbox
+.b-checkbox
+	cursor: pointer
+.b-checkbox__custom
+	width: 20px
+	height: 20px
+	+border-radius($site-radius)
+	background: #fff
+	margin-right: 6px
+	vertical-align: middle
+	line-height: 20px
+	text-align: center
+	position: relative
+	top: -2px
+	display: none
+	&.show
+		display: inline-block
+		*display: inline
+		zoom: 1
+.b-checkbox__input.hide
+	display: none
+
+// Article
+.b-article
+	h3
+		font-size: 16px
+		font-weight: 600
+		margin-bottom: 14px
+
+	h2, .b-content__heading
+		margin-bottom: 24px
+
+	li
+		margin-bottom: 14px
+
+	ul
+		margin-bottom: 16px
+
+	.b-unordered-list
+		padding-bottom: 20px
+		& > li
+			position: relative
+			padding-left: 14px
+			line-height: 170%
+
+			&:before
+				position: absolute
+				content: '•'
+				color: #00aeef
+				margin-left: -14px
+
+	p
+		margin-bottom: 20px
+		line-height: 170%
+
+	i
+		font-style: italic
+
+	a
+		+link-animation
+
+	strong
+		font-weight: 600
+
+// Misc
+.b-no-desktop
+	display: none
+.b-mobile
+	display: none
+.b-tablet
+	display: none

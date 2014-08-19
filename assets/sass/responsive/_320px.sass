@@ -1,0 +1,138 @@
+@media only screen and (max-width: 380px)
+	.b-aside__nav
+		margin-top: 45px
+
+	.b-header
+		height: 45px
+
+	.b-header__content__logo
+		height: 45px
+		line-height: 45px
+		font-size: 17px
+		width: 100%
+		text-align: center
+
+	.b-nav
+		display: none
+
+	.b-content
+		margin-top: 10px
+		padding-bottom: 10px
+
+	.b-content__heading
+		text-align: center
+		color: #353f4b
+		font-size: 24px
+		font-weight: 200
+		margin-top: 20px
+	.b-content__subheading
+		text-align: center
+		color: #353f4b
+		font-size: 12px
+		font-weight: 200
+		margin-top: 20px
+
+	// Switch
+	.b-switch
+		//display: none
+		border-bottom-style: solid
+		border-bottom-width: 1px
+		margin-bottom: 20px
+		width: 100%
+		height: 44px
+		text-align: center
+		+clearfix
+
+	.b-switch__element
+		font-size: 14px
+		margin-top: 6px
+		height: 30px
+		line-height: 30px
+		vertical-align: middle
+		width: 45%
+		float: left
+		border-style: solid
+		border-width: 1px
+		+border-radius($site-radius 0 0 $site-radius)
+		margin-right: 0
+		margin-left: 5%
+		border-bottom-style: solid
+		&:last-child
+			margin-left: 0
+			+border-radius(0 $site-radius $site-radius 0)
+			border-left: 0
+		a
+			text-decoration: none
+
+	.b-print-items__element
+		width: 284px
+
+	.b-header__mobile__icons
+		display: block
+
+	.b-aside__footer
+		display: block
+		font-size: 10px
+
+	.b-input--auth
+		width: 88%
+
+	.b-accordion__element__description
+		padding-bottom: 40px
+
+	.l-footer
+		display: none
+
+	.b-no-mobile
+		display: none
+	.b-mobile
+		display: block
+
+	// Index catalogue
+	.b-print__catalogue-selector
+		padding-top: 0
+
+	.b-print__catalogue-selector__element
+		display: block
+		text-align: left
+		height: 44px
+		line-height: 44px
+		vertical-align: middle
+		padding: 0
+		margin-left: -2%
+		padding-left: 14px
+		width: 100%
+		border-top: 1px solid
+		font-size: 18px
+		background: url(/assets/i/catalogue-right.png) 97% 50% no-repeat
+		&:last-child
+			border-bottom: 1px solid
+
+	.b-print__catalogue-selector__element__link
+		border-bottom: 0
+
+	.b-print__catalogue-selector__element i
+		position: relative
+		top: -4px
+		border-bottom: none
+
+	.b-icon--catalogue-selector__element
+		margin-right: 14px
+		font-size: 26px
+		display: inline-block
+		margin-bottom: 0
+
+	.tabs__mobilenav__back
+		top: 73px
+	.tabs__mobilenav__next
+		top: 73px
+
+	.tabs__mobilenav__back--steps
+		top: 63px
+	.tabs__mobilenav__next--steps
+		top: 63px
+
+	//.b-print-items
+	//	display: none
+
+	+sticky-footer(0, ".l-page", ".footer-buffer", ".l-footer")

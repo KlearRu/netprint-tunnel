@@ -1,0 +1,383 @@
+.b-content__wrap {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 5px;
+}
+.b-content {
+    padding-top: 30px;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+.b-well {
+    border-radius: 0;
+    box-shadow: none;
+}
+.b-article {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.b-banner--horiz {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.b-print-items {
+    background: #fff;
+}
+.b-print-items__element {
+    border-radius: 0;
+    box-shadow: none;
+}
+.b-print-items__element:hover {
+    box-shadow: none;
+}
+.b-print-items__element__footer {
+    border-radius: 0;
+}
+.b-header__content__logo img {
+    vertical-align: middle;
+}
+.b-type-selector__current__ear {
+    background: url(/assets/i/themes/green/type-selector-current.png) 0 0 no-repeat
+}
+.b-type-selector {
+    box-shadow: none;
+}
+
+
+/*Фон страницы*/
+.color-global-background {
+    background: url(/assets/i/themes/green/bg.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+/* Ссылка */
+.color-link {
+    color: #8dc63f
+}
+
+/*Контент*/
+.color-content {
+    background: #fff;
+}
+
+/*Фон шапки*/
+.color-header-background {
+    background-color: #8dc63f;
+}
+
+/*Фон меню в шапке*/
+.color-navigation-background {
+    background-color: #76a734;
+}
+/*Ссылка в меню в шапке*/
+.color-navigation-link {
+    color: #fff;
+}
+.color-navigation-link:hover {
+    color: #8dc63f
+}
+
+/*Ссылка-иконка для мобильного разрешения*/
+.color-navigation-mobile-link {
+    color: #fff;
+}
+
+/*Кнопки*/
+.color-button {
+    background-color: #8dc63f;
+    color: #fff;
+}
+.color-button a {
+    color: #fff
+}
+/*Кнопка при наведении*/
+.color-button:hover {
+    background-color: #ff9a23;
+    opacity: 1;
+}
+.color-button:hover a {
+    color: #fff
+}
+
+/*Заголовок*/
+.color-heading {
+    color: #363f4c
+}
+
+/*Шрифт в текстовых блоках*/
+.color-article {
+    color: #363f4c;
+}
+.color-article h3 {
+    color: #4d5a6d
+}
+.color-article p {
+    color: #363f4c
+}
+.color-article a {
+    color: #8dc63f
+}
+.color-article li:before {
+    color: #8dc63f
+}
+
+
+/*Ссылки в текстовых блоках*/
+.color-article .b-article a, .color-article.b-article a {
+    color: #8dc63f
+}
+
+/*Шрифт "как это работает"*/
+.color-howitworks {
+    color: #4d5a6d
+}
+/*Иконка "как это работает"*/
+.color-icon-howitworks {
+    color: #b2b9c3;
+    background-color: #f5f9fc
+}
+.color-howitworks a {
+    color: #8dc63f
+}
+
+.color-icon-howitworks-offline {
+    background-color: #fff;
+    color: #b8bdc5
+}
+
+.color-link-about-editor {
+    color: #8dc63f
+}
+
+.color-desktop-only {
+    background: #fff;
+}
+
+.color-type-selector {
+    color: #586374
+}
+.color-type-selector-title {
+    color: #8dc63f
+}
+
+/*Навигация по печатному каталогу*/
+.b-print__catalogue-selector .current a {
+    color: #ced3d8
+}
+.color-catalogue-selector {
+    color: #8dc63f
+}
+
+/*Элемент печатного каталога*/
+.color-print-item {
+    background-color: #fff;
+}
+.color-print-item:hover .b-button {
+    background-color: #ff9a23;
+}
+.color-print-item-title {
+    color: #8dc63f;
+}
+.responsive-mobile .b-print__catalogue-selector__element {
+    background-color: #fff;
+    border-color: #f1f1f1
+}
+/*Подвал элемента печатного каталога*/
+.color-print-item-footer {
+    background-color: #f9fbfd;
+}
+/*Прайс элемента печатного каталога*/
+.color-print-item-price {
+    color: #8092a6
+}
+/*Прайс элемента печатного каталога значение*/
+.color-print-item-price-value {
+    color: #626c78
+}
+
+/*Кнопка назад в мобильном каталоге*/
+.color-mobile-nav-back {
+    color: #8092a6
+}
+
+/*Иконки в меню*/
+.color-icon-nav {
+    color: #fff
+}
+
+/*Переключатель*/
+.color-switch {
+    background-color: #fff;
+    border-bottom-color: #d8dadd;
+}
+.color-switch-element {
+    border-color: #8dc63f
+}
+.color-switch-element a {
+    color: #8dc63f
+}
+.color-switch-element.current {
+    background-color: #8dc63f
+}
+.color-switch-element.current a {
+    color: #fff
+}
+
+.responsive-tablet .color-switch {
+    background-color: transparent;
+    border-color: transparent;
+}
+.responsive-tablet .color-switch-element.current {
+    background: transparent;
+}
+.responsive-tablet .color-switch-element a {
+    color: #8dc63f
+}
+.responsive-tablet .color-switch-element.current a {
+    color: #363f4c
+}
+
+/*Проверка статуса*/
+.color-input {
+    border-color: #e4e6e9
+}
+.color-order-note {
+    color: #e4e6e9
+}
+
+/*Разделитель колонок*/
+.color-column-bordered {
+    border-color: #dee0e2
+}
+
+/*Шаги заказа*/
+.color-order-steps-note {
+    color: #adb0b4
+}
+.color-order-steps a {
+    color: #8dc63f
+}
+.color-order-steps-done a {
+    color: #ff9a23
+}
+.color-order-steps-current a {
+    color: #363f4c
+}
+
+/*Каталог заказа*/
+.color-item-title {
+    color: #8dc63f
+}
+.color-item-price {
+    color: #363f4c
+}
+.color-item-new-price {
+    color: #e54c4c
+}
+.color-accordion-icon-closed {
+    color: #8dc63f
+}
+
+/* Отзывы */
+.color-replies-refresh {
+    color: #8dc63f
+}
+.color-reply {
+    color: #586374
+}
+
+.color-selector-item {
+    color: #8dc63f;
+}
+.color-selector-item.current {
+    background: #8dc63f;
+    color: #fff
+}
+.color-print-item-title-order {
+    color: #8dc63f
+}
+
+/*Попапы*/
+.color-popup {
+    background-color: #f0f3f6;
+}
+.color-auth-credentials {
+    border-bottom-color: #c6cad0;
+}
+.color-auth-bubble {
+    color: #fff;
+    background: #c6cad0;
+}
+.responsive-mobile .color-auth-bubble,
+.responsive-tablet .color-auth-bubble {
+    background: #f0f3f6;
+    color: #bbbfc5
+}
+
+/*Подвал*/
+.color-footer {
+    color: #fff
+}
+/*Ссылки в подвале*/
+.color-footer-link {
+    color: #fff
+}
+
+/*Фон бокового меню*/
+.color-aside {
+    background-color: #282828;
+}
+/*Ссылка бокового меню*/
+.color-aside-link {
+    color: #fff;
+}
+/*Подвал бокового меню*/
+.color-aside-footer {
+    color: #767676
+}
+
+/* FAQ */
+.color-faq {
+    background-color: #fff;
+}
+.color-faq-topic {
+    color: #8dc63f;
+}
+
+/* Сравнительная таблица */
+.color-compare-table {
+
+}
+.color-compare-table thead td {
+    background-color: #76a734;
+    color: #f0f3f6;
+    border-right: 1px solid #f0f3f6
+}
+.color-compare-table thead td:first-child {
+    background-color: #dee1e5;
+    border-right: none
+}
+.color-v-header {
+    color: #fff;
+    background-color: #8dc63f;
+    border-color: #fff;
+}
+.color-cell {
+    color: #d0d3d7;
+    border: 1px solid #f0f3f6;
+    border-top: none;
+    background-color: #ffffff;
+}
+.color-cell-no-bottom {
+    border-bottom: none
+}
+.color-cell-no-right {
+    border-right: none
+}
+.color-table-y {
+    color: #8dc63f;
+}
