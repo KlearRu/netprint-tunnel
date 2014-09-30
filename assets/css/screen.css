@@ -1801,6 +1801,10 @@ body.no-overflow, html.no-overflow {
   margin-right: 20px;
 }
 
+.b-points__type--map {
+  display: none;
+}
+
 .b-popup-bg {
   display: none;
   z-index: 999;
