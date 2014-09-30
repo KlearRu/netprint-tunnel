@@ -7,6 +7,8 @@ NP.app = function() {
     this.$pageShiftOverlay = $(".b-page__shift-overlay--js");
     this.asideMenuVisible = false;
 
+    this.$aside = $(".l-aside--js");
+
     this.$pageBody = $("html, body");
 
     this.mode = false;
@@ -29,9 +31,15 @@ NP.app = function() {
             this.$page.css({
                 left: ( $(window).width() - left ) < left ? left : ( $(window).width() - left ) + "px"
             });
+            this.$aside.animate({
+                "opacity": "1"
+            });
         } else {
             this.$page.css({
                 left: 0
+            });
+            this.$aside.animate({
+                "opacity": "0.001"
             });
         }
     };
@@ -143,8 +151,16 @@ NP.tab = function(el) {
 
     }, this));
 
+    this.lastHeight = $(window).height();
+    this.lastWidth = $(window).width();
+
     $(window).on("resize", $.proxy(function() {
-        this.init();
+        if( this.lastHeight !== $(window).height() || this.lastWidth !== $(window).width() ) {
+            this.lastHeight = $(window).height();
+            this.lastWidth = $(window).width();
+
+            this.init();
+        }
     }, this));
 
     if( this.mobileNav ) {
@@ -187,6 +203,18 @@ NP.tab = function(el) {
     };
     this.init();
 };
+
+NP.pointsViewAs = function() {
+    $(".js-view-as").on("click", function() {
+        $(".js-view-as").removeClass("current");
+        $(this).addClass("current");
+
+        var type = $(this).data("as");
+        $(".b-points__type").hide();
+
+        $(".b-points__type--" + type).show();
+    });
+}
 
 NP.popup = function(el) {
     this.$trigger = $(el);
@@ -414,4 +442,5 @@ $(function() {
     NP.photoGallery();
     NP.slider();
     NP.toggle();
+    NP.pointsViewAs();
 });

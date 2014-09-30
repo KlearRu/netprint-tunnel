@@ -72,7 +72,7 @@
 			<div class="footer-buffer"></div>
 		</div>
 
-		<div class="l-aside color-aside">
+		<div class="l-aside l-aside--js color-aside">
 			<ul class="b-aside__nav">
 				<li class="b-aside__nav__element">
 					<a class="b-aside__nav__element__link color-aside-link" href="?page=howitworks">Как это работает</a>
