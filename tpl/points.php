@@ -102,7 +102,7 @@
 				<h3 class="b-no-mobile b-no-tablet b-content__subheading b-content__subheading--points b-content__subheading--points-content b-content__subheading--left color-heading">Самовывоз</h3>
 
 				<div class="b-points__type-selector">
-					Показать варианты: <span class="b-points__type-selector__item current js-view-as" data-as="list">плиткой</span> <span class="b-points__type-selector__item js-view-as" data-as="map">на карте</span>
+					<span class="b-pointes__type-selector__title">Показать варианты:</span> <span class="b-points__type-selector__item current js-view-as" data-as="list">плиткой</span> <span class="b-points__type-selector__item js-view-as" data-as="map">на карте</span>
 				</div>
 
 				<div class="b-points__type b-points__type--list">

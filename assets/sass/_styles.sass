@@ -175,8 +175,9 @@ body, html
 .b-header__mobile__icons__login
 	position: absolute
 	top: 0px
-	right: 14px
+	right: 0
 	padding-left: 30px
+	padding-right: 14px
 
 .b-nav
 	height: 55px
@@ -1148,6 +1149,12 @@ body, html
 	top: 0
 	background: rgba(54, 63, 76, .9)
 
+
+.b-popup
+	pointer-events: none
+	.b-popup__content
+		pointer-events: auto
+
 .b-popup
 	display: none
 	position: fixed
@@ -1160,11 +1167,15 @@ body, html
 	overflow: hidden
 	overflow-y: scroll
 
+	//pointer-events: none
+
 	z-index: 1000
 	a
 		+link-animation
 
 .b-popup__content
+	//pointer-events: auto
+
 	position: relative
 
 	top: 100px

@@ -349,8 +349,9 @@ body.no-overflow, html.no-overflow {
 .b-header__mobile__icons__login {
   position: absolute;
   top: 0px;
-  right: 14px;
+  right: 0;
   padding-left: 30px;
+  padding-right: 14px;
 }
 
 .b-nav {
@@ -1801,10 +1802,6 @@ body.no-overflow, html.no-overflow {
   margin-right: 20px;
 }
 
-.b-points__type--map {
-  display: none;
-}
-
 .b-popup-bg {
   display: none;
   z-index: 999;
@@ -1814,6 +1811,13 @@ body.no-overflow, html.no-overflow {
   left: 0;
   top: 0;
   background: rgba(54, 63, 76, 0.9);
+}
+
+.b-popup {
+  pointer-events: none;
+}
+.b-popup .b-popup__content {
+  pointer-events: auto;
 }
 
 .b-popup {
@@ -2317,6 +2321,11 @@ html, body {
     display: none;
   }
 
+  .b-pointes__type-selector__title {
+    display: block;
+    margin-bottom: 14px;
+  }
+
   .b-points__type__map {
     width: 100%;
     height: 400px;
@@ -2433,6 +2442,16 @@ html, body {
 
   .b-compare-table__entry--wrap--desktop {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-height: 480px) {
+  .b-aside__nav {
+    margin-top: 0;
+  }
+}
+@media screen and (max-height: 360px) {
+  .b-aside__footer {
+    display: none;
   }
 }
 @media only screen and (max-width: 380px) {

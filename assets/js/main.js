@@ -257,6 +257,8 @@ NP.popup = function(el) {
     this.$trigger.on("touchstart, click", $.proxy(this.showPopup, this));
     this.$popup.find(".b-popup__close--js").on("touchstart, click", $.proxy(this.hideAll, this));
 
+    $(".b-popup-bg").on("touchstart, click", $.proxy(this.hideAll, this));
+
     this.hidePopup();
 };
 
